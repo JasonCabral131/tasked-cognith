@@ -2,7 +2,7 @@ export type AsteriodProps = {
   links: {
     self: String;
   };
-  id: number;
+  id: number | string;
   neo_reference_id: String;
   name: String;
   name_limited: String;
@@ -16,8 +16,8 @@ export type AsteriodProps = {
   is_sentry_object: Boolean;
 };
 export type estimatedDiameterProps = {
-  estimated_diameter_min: String;
-  estimated_diameter_max: String;
+  estimated_diameter_min: String | number | string;
+  estimated_diameter_max: String | number | string;
 };
 export type closeAproachDataProps = {
   close_approach_date: String;

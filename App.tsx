@@ -5,6 +5,8 @@ import {
   NavigationContainer,
 } from '@react-navigation/native';
 import StackNavigation from './src/navigations/Stacks';
+import {NativeBaseProvider} from 'native-base';
+
 const App = () => {
   return (
     <NavigationContainer
@@ -12,7 +14,9 @@ const App = () => {
       onStateChange={async () => {
         // to do is that changes create firebase analytics when new screen shows
       }}>
+         <NativeBaseProvider>
       <StackNavigation />
+      </NativeBaseProvider>
     </NavigationContainer>
   );
 };

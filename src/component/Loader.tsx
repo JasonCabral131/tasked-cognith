@@ -7,7 +7,7 @@ import {Colors} from '../fixture/colors';
 export class Loader extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} testID='loader-container'>
         <LottieView
           source={require('./../assets/lottie/astronaut-holds-flag-with-alien.json')}
           style={{height: 220, width: 220, alignSelf: 'center'}}
